@@ -1,0 +1,6 @@
+:root {
+  --font-color: #52337f;
+}
+.font-tec {
+  font-family: var(--font-color);
+}

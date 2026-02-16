@@ -1,0 +1,43 @@
+.timeslots {
+  margin-top: 14px;
+  text-align: center;
+}
+
+.timeslots h4 {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+/* GRID COMPACTO PARA MÓVIL */
+.slots {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+/* BOTONES TIPO APP */
+.slots button {
+  padding: 6px 0;
+  font-size: 12px;
+  border-radius: 16px;
+  border: 1px solid #6fd1c6;
+  background: white;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* ACTIVO */
+.slots button.active {
+  background: #6fd1c6;
+  color: white;
+  border-color: #6fd1c6;
+}
+
+/* HOVER (desktop) */
+.slots button:hover {
+  background: #6fd1c6;
+  color: white;
+}

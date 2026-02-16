@@ -1,0 +1,8 @@
+nav {
+  color: var(--font-color);
+}
+.color {
+  width: 100px;
+  height: 100px;
+  background-color: var(--font-color);
+}

@@ -1,0 +1,80 @@
+.react-calendar {
+  width: 100%;
+  max-width: 360px;
+  margin: auto;
+  border: none;
+  font-family: system-ui, sans-serif;
+}
+
+/* Header del mes */
+.react-calendar__navigation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.react-calendar__navigation__label {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ff6b6b;
+}
+
+/* Días de la semana */
+.react-calendar__month-view__weekdays {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #999;
+}
+
+/* Días */
+.react-calendar__tile {
+  height: 40px;
+  border-radius: 10px;
+}
+.react-calendar__tile:hover {
+  cursor: pointer;
+}
+/* Día seleccionado */
+.react-calendar__tile--active {
+  background: #ff6b6b;
+  color: white;
+}
+
+/* Días bloqueados */
+.react-calendar__tile:disabled {
+  color: #ccc;
+}
+.react-calendar__tile:disabled {
+  background: transparent;
+  color: #ccc;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+/* Lunes a Viernes = 5 columnas */
+.react-calendar__month-view__weekdays,
+.react-calendar__month-view__days {
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr);
+}
+/* DOMINGO (1) y SÁBADO (7) */
+.react-calendar__month-view__weekdays__weekday:nth-child(1),
+.react-calendar__month-view__weekdays__weekday:nth-child(7) {
+  display: none;
+}
+/* Domingo = 7n + 1 | Sábado = 7n */
+.react-calendar__month-view__days__day:nth-child(7n + 1),
+.react-calendar__month-view__days__day:nth-child(7n) {
+  display: none;
+}
+
+.react-calendar {
+  width: 100%;
+  max-width: 360px;
+  margin: auto;
+  border: none;
+}
+
+.react-calendar__tile {
+  height: 40px;
+  border-radius: 10px;
+}
