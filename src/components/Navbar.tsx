@@ -25,7 +25,7 @@ function Navbar() {
       <ul className=" lg:flex hidden items-center gap-10">
         <li>
           <NavLink
-            to="/gestionar_cita"
+            to="/gestionar_cita/cancelar"
             end
             className={linkClass}
             onMouseEnter={() => setHovering(true)}
@@ -36,7 +36,7 @@ function Navbar() {
         </li>
         <li>
           <NavLink
-            to="/gestionar_cita"
+            to="/gestionar_cita/confirmar"
             end
             className={linkClass}
             onMouseEnter={() => setHovering(true)}
@@ -51,7 +51,13 @@ function Navbar() {
         style={{ backgroundColor: "#52337f" }}
         className="hover:cursor-pointer text-[#f8f6fc] lg:inline hidden text-sm  active:scale-95 transition-all w-40 h-11 rounded-full"
       >
-        Agendar Cita
+        <NavLink
+          to="/"
+          onClick={() => setMenuOpen(false)}
+          style={{ color: "white" }}
+        >
+          Agendar Cita
+        </NavLink>
       </button>
       <button
         onClick={() => setMenuOpen(!menuOpen)}
@@ -75,7 +81,7 @@ function Navbar() {
         <ul className="flex flex-col space-y-4 font-tec text-lg">
           <li>
             <NavLink
-              to="/gestionar_cita"
+              to="/gestionar_cita/cancelar"
               onClick={() => setMenuOpen(false)}
               className={linkClass}
               onMouseEnter={() => setHovering(true)}
@@ -86,7 +92,7 @@ function Navbar() {
           </li>
           <li>
             <NavLink
-              to="/gestionar_cita"
+              to="/gestionar_cita/confirmar"
               onClick={() => setMenuOpen(false)}
               className={linkClass}
               onMouseEnter={() => setHovering(true)}
@@ -102,7 +108,13 @@ function Navbar() {
           style={{ backgroundColor: "#52337f" }}
           className=" text-[#f8f6fc] mt-6 text-sm hover:opacity-90 active:scale-95 transition-all w-40 h-11 rounded-full hover:cursor-pointer"
         >
-          Agendar Cita
+          <NavLink
+            to="/"
+            onClick={() => setMenuOpen(false)}
+            style={{ color: "white" }}
+          >
+            Agendar Cita
+          </NavLink>
         </button>
       </div>
     </nav>

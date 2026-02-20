@@ -12,7 +12,6 @@ const CalendarComponent: React.FC = () => {
   const [selectedDate, setSelectedDate] = useState<Date | null>(null)
 
   const [selectedHour, setSelectedHour] = useState<string | null>(null)
-  const [date, setDate] = useState(new Date())
 
   const today = new Date()
   const minDate = new Date(today.getFullYear(), today.getMonth(), 1)

@@ -34,7 +34,8 @@ function Footer() {
             <li></li>
             <li>
               <a
-                href="#"
+                href="http://itsncg.edu.mx/documentos/PROGRAMA_ANUAL_TRABAJO_COMITe_eTICA.pdf"
+                target="_blank"
                 className="relative font-bold text-[#52337f]
              after:content-[''] after:absolute after:left-0 after:bottom-[-4px]
              after:h-[2px] after:w-full after:bg-[#52337f]
@@ -50,13 +51,21 @@ function Footer() {
 
           <ul className="flex gap-5 text-[#52337f]">
             <li>
-              <a href="#" className="hover:opacity-70 transition">
+              <a
+                href="https://www.facebook.com/tecnmcampusnuevocasasgrandes/"
+                target="_blank"
+                className="hover:opacity-70 transition"
+              >
                 <Facebook size={20} strokeWidth={2.5} />
               </a>
             </li>
 
             <li>
-              <a href="#" className="hover:opacity-70 transition">
+              <a
+                href="https://www.instagram.com/tecnmcampusncg/"
+                target="_blank"
+                className="hover:opacity-70 transition"
+              >
                 <Instagram size={20} strokeWidth={2.5} />
               </a>
             </li>
