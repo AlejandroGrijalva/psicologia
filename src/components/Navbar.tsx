@@ -55,7 +55,7 @@ function Navbar() {
       </button>
       <button
         onClick={() => setMenuOpen(!menuOpen)}
-        className="lg:hidden  text-3xl"
+        className="lg:hidden  text-3xl hover:cursor-pointer"
       >
         ☰
       </button>
@@ -100,7 +100,7 @@ function Navbar() {
         <button
           type="button"
           style={{ backgroundColor: "#52337f" }}
-          className=" text-[#f8f6fc] mt-6 text-sm hover:opacity-90 active:scale-95 transition-all w-40 h-11 rounded-full"
+          className=" text-[#f8f6fc] mt-6 text-sm hover:opacity-90 active:scale-95 transition-all w-40 h-11 rounded-full hover:cursor-pointer"
         >
           Agendar Cita
         </button>

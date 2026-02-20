@@ -59,6 +59,7 @@
   font-size: 13px;
   transition: all 0.2s ease;
 }
+
 /* Active Day*/
 .react-calendar__tile--active {
   background: var(--font-color);
