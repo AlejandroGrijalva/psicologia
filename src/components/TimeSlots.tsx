@@ -6,7 +6,6 @@ interface Props {
 }
 
 const TimeSlots: React.FC<Props> = ({ selectedHour, onSelectHour }) => {
-  // Horarios permitidos (9–5, sin 2–3 pm)
   const hours = [
     "9:00 AM",
     "10:00 AM",
@@ -15,7 +14,6 @@ const TimeSlots: React.FC<Props> = ({ selectedHour, onSelectHour }) => {
     "1:00 PM",
     "3:00 PM",
     "4:00 PM",
-    "5:00 PM",
   ]
 
   return (

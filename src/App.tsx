@@ -1,13 +1,13 @@
 import { Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
-import About from "./pages/About"
+import ManageAppoinment from "./pages/ManageAppointment"
 import "./App.css"
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/departamento" element={<About />} />
+      <Route path="/gestionar_cita" element={<ManageAppoinment />} />
     </Routes>
 
     /* <div className="app">
