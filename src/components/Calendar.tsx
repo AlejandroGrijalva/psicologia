@@ -47,7 +47,11 @@ const CalendarComponent: React.FC = () => {
       />
 
       {selectedDate && (
-        <TimeSlots selectedHour={selectedHour} onSelectHour={setSelectedHour} />
+        <TimeSlots
+          selectedHour={selectedHour}
+          onSelectHour={setSelectedHour}
+          onClose={() => setSelectedDate(null)}
+        />
       )}
 
       {selectedDate && selectedHour && (
